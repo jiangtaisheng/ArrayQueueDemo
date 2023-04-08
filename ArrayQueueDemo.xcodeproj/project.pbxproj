@@ -20,6 +20,7 @@
 		B2E51D9029DFBE58005B3107 /* ArrayCycleQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51D8F29DFBE58005B3107 /* ArrayCycleQueue.swift */; };
 		B2E51D9229DFCA52005B3107 /* SingleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51D9129DFCA52005B3107 /* SingleLinkedList.swift */; };
 		B2E51D9429E02E3E005B3107 /* SingleLinkHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51D9329E02E3E005B3107 /* SingleLinkHelp.swift */; };
+		B2E51D9629E152DF005B3107 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51D9529E152DF005B3107 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		B2E51D8F29DFBE58005B3107 /* ArrayCycleQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayCycleQueue.swift; sourceTree = "<group>"; };
 		B2E51D9129DFCA52005B3107 /* SingleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLinkedList.swift; sourceTree = "<group>"; };
 		B2E51D9329E02E3E005B3107 /* SingleLinkHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLinkHelp.swift; sourceTree = "<group>"; };
+		B2E51D9529E152DF005B3107 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				B2E51D8F29DFBE58005B3107 /* ArrayCycleQueue.swift */,
 				B2E51D9129DFCA52005B3107 /* SingleLinkedList.swift */,
 				B2E51D9329E02E3E005B3107 /* SingleLinkHelp.swift */,
+				B2E51D9529E152DF005B3107 /* Stack.swift */,
 				B2E51D6329DECEFE005B3107 /* Main.storyboard */,
 				B2E51D6629DECF03005B3107 /* Assets.xcassets */,
 				B2E51D6829DECF03005B3107 /* LaunchScreen.storyboard */,
@@ -274,6 +277,7 @@
 				B2E51D9029DFBE58005B3107 /* ArrayCycleQueue.swift in Sources */,
 				B2E51D9429E02E3E005B3107 /* SingleLinkHelp.swift in Sources */,
 				B2E51D5E29DECEFE005B3107 /* AppDelegate.swift in Sources */,
+				B2E51D9629E152DF005B3107 /* Stack.swift in Sources */,
 				B2E51D6029DECEFE005B3107 /* SceneDelegate.swift in Sources */,
 				B2E51D9229DFCA52005B3107 /* SingleLinkedList.swift in Sources */,
 				B2E51D8E29DECFF1005B3107 /* ArrayQueue.swift in Sources */,
