@@ -65,7 +65,66 @@ class SingleLinkHelp: NSObject {
     }
     
     // 百度面试题 从尾到头打印单链表  要求方式1: 反向遍历 方式2：Stack栈
-    
+    static func inversePrintLogLinkedListToStack(headNode: Node){
+        if headNode.next == nil  {
+            print("链表为空")
+            return
+        }
+        var tempNode: Node = headNode
+        let stack: Stack = Stack()
+        while(tempNode.next != nil ) {
+            tempNode = tempNode.next!
+            stack.push(tempNode)
+        }
+        
+        while(stack.count > 0) {
+            print(stack.pop())
+        }
+//        for index in 0..<stack.count {
+//            print(stack.pop())
+//        }
+    }
     
     //合并两个有序的单链表，合并之后链表的依然有序
+    // 想法：
+    // 1.新建第三个头结点 指向第一个链表
+    // 2.遍历第二个链表 插入到第三个链表中
+    //
+   static  func mergeTwoOrderedLinkedList(headOneNode: Node, headTwoNode: Node, headThreeNode: Node) {
+        
+        // 如果 headOneNode 和 headTwoNode 都是空链表
+        if headOneNode.next == nil && headTwoNode.next == nil {
+            return
+        }
+        if headOneNode.next == nil {
+            headThreeNode.next = headTwoNode.next
+        }else if headTwoNode.next == nil {
+            headThreeNode.next = headOneNode.next
+        }else {  //  headOneNode 和 headTwoNode 都不是空链表
+            headThreeNode.next = headOneNode.next
+            var  tempNode = headTwoNode.next! //记录 headTwoNode 遍历时的节点
+            var  tempThreeNode = headThreeNode.next! //记录 headThreeNode 遍历时的节点
+            var nextNode: Node? = nil //遍历headTwoNode 找到合适位置后 记录 tempNode 下一个节点的位置，相当于tempNode做了后移
+            
+            while(tempNode.next != nil){
+                if tempThreeNode.next == nil {
+                    // 把headTwoNode未遍历的节点接到 headThreeNode 后边
+                    tempThreeNode.next = tempNode
+                    break
+                }
+                let tempId =  (tempNode.data as![String: Any])["id"] as! Int
+                let tempThreeId =  (tempThreeNode.next!.data as![String: Any])["id"] as! Int
+                if tempId <= tempThreeId {  //此时找到合适的位置
+                    nextNode = tempNode.next
+                    tempNode.next = tempThreeNode.next
+                    tempThreeNode.next = tempNode
+                    tempNode = nextNode!
+                }
+                tempThreeNode = tempThreeNode.next!
+            }
+           
+            
+        }
+    }
+    
 }
