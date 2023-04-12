@@ -21,6 +21,16 @@
 		B2E51D9229DFCA52005B3107 /* SingleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51D9129DFCA52005B3107 /* SingleLinkedList.swift */; };
 		B2E51D9429E02E3E005B3107 /* SingleLinkHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51D9329E02E3E005B3107 /* SingleLinkHelp.swift */; };
 		B2E51D9629E152DF005B3107 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51D9529E152DF005B3107 /* Stack.swift */; };
+		B2E51D9829E25056005B3107 /* DoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51D9729E25056005B3107 /* DoubleLinkedList.swift */; };
+		B2E51D9A29E26235005B3107 /* QueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51D9929E26235005B3107 /* QueueViewController.swift */; };
+		B2E51D9C29E26250005B3107 /* SingleLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51D9B29E26250005B3107 /* SingleLinkViewController.swift */; };
+		B2E51D9E29E26268005B3107 /* DoubleLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51D9D29E26268005B3107 /* DoubleLinkViewController.swift */; };
+		B2E51DA029E267B7005B3107 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51D9F29E267B7005B3107 /* StackViewController.swift */; };
+		B2E51DA229E2AB0A005B3107 /* SingleCycleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51DA129E2AB0A005B3107 /* SingleCycleLinkedList.swift */; };
+		B2E51DA429E2AB6C005B3107 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51DA329E2AB6C005B3107 /* Node.swift */; };
+		B2E51DA629E2ABA1005B3107 /* DoubleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51DA529E2ABA1005B3107 /* DoubleNode.swift */; };
+		B2E51DA829E2C18A005B3107 /* SingleCycleLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51DA729E2C18A005B3107 /* SingleCycleLinkViewController.swift */; };
+		B2E51DAA29E64CEF005B3107 /* StackHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51DA929E64CEF005B3107 /* StackHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +69,16 @@
 		B2E51D9129DFCA52005B3107 /* SingleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLinkedList.swift; sourceTree = "<group>"; };
 		B2E51D9329E02E3E005B3107 /* SingleLinkHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLinkHelp.swift; sourceTree = "<group>"; };
 		B2E51D9529E152DF005B3107 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		B2E51D9729E25056005B3107 /* DoubleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLinkedList.swift; sourceTree = "<group>"; };
+		B2E51D9929E26235005B3107 /* QueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueViewController.swift; sourceTree = "<group>"; };
+		B2E51D9B29E26250005B3107 /* SingleLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLinkViewController.swift; sourceTree = "<group>"; };
+		B2E51D9D29E26268005B3107 /* DoubleLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLinkViewController.swift; sourceTree = "<group>"; };
+		B2E51D9F29E267B7005B3107 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
+		B2E51DA129E2AB0A005B3107 /* SingleCycleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCycleLinkedList.swift; sourceTree = "<group>"; };
+		B2E51DA329E2AB6C005B3107 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		B2E51DA529E2ABA1005B3107 /* DoubleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleNode.swift; sourceTree = "<group>"; };
+		B2E51DA729E2C18A005B3107 /* SingleCycleLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCycleLinkViewController.swift; sourceTree = "<group>"; };
+		B2E51DA929E64CEF005B3107 /* StackHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +132,20 @@
 				B2E51D5D29DECEFE005B3107 /* AppDelegate.swift */,
 				B2E51D5F29DECEFE005B3107 /* SceneDelegate.swift */,
 				B2E51D6129DECEFE005B3107 /* ViewController.swift */,
+				B2E51D9929E26235005B3107 /* QueueViewController.swift */,
+				B2E51D9B29E26250005B3107 /* SingleLinkViewController.swift */,
+				B2E51D9D29E26268005B3107 /* DoubleLinkViewController.swift */,
+				B2E51DA729E2C18A005B3107 /* SingleCycleLinkViewController.swift */,
+				B2E51D9F29E267B7005B3107 /* StackViewController.swift */,
 				B2E51D8D29DECFF1005B3107 /* ArrayQueue.swift */,
 				B2E51D8F29DFBE58005B3107 /* ArrayCycleQueue.swift */,
 				B2E51D9129DFCA52005B3107 /* SingleLinkedList.swift */,
+				B2E51DA129E2AB0A005B3107 /* SingleCycleLinkedList.swift */,
 				B2E51D9329E02E3E005B3107 /* SingleLinkHelp.swift */,
+				B2E51DA929E64CEF005B3107 /* StackHelper.swift */,
+				B2E51D9729E25056005B3107 /* DoubleLinkedList.swift */,
+				B2E51DA329E2AB6C005B3107 /* Node.swift */,
+				B2E51DA529E2ABA1005B3107 /* DoubleNode.swift */,
 				B2E51D9529E152DF005B3107 /* Stack.swift */,
 				B2E51D6329DECEFE005B3107 /* Main.storyboard */,
 				B2E51D6629DECF03005B3107 /* Assets.xcassets */,
@@ -273,14 +303,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E51D9A29E26235005B3107 /* QueueViewController.swift in Sources */,
+				B2E51D9E29E26268005B3107 /* DoubleLinkViewController.swift in Sources */,
 				B2E51D6229DECEFE005B3107 /* ViewController.swift in Sources */,
 				B2E51D9029DFBE58005B3107 /* ArrayCycleQueue.swift in Sources */,
 				B2E51D9429E02E3E005B3107 /* SingleLinkHelp.swift in Sources */,
 				B2E51D5E29DECEFE005B3107 /* AppDelegate.swift in Sources */,
+				B2E51DA829E2C18A005B3107 /* SingleCycleLinkViewController.swift in Sources */,
+				B2E51DA429E2AB6C005B3107 /* Node.swift in Sources */,
+				B2E51DAA29E64CEF005B3107 /* StackHelper.swift in Sources */,
+				B2E51D9829E25056005B3107 /* DoubleLinkedList.swift in Sources */,
 				B2E51D9629E152DF005B3107 /* Stack.swift in Sources */,
+				B2E51D9C29E26250005B3107 /* SingleLinkViewController.swift in Sources */,
 				B2E51D6029DECEFE005B3107 /* SceneDelegate.swift in Sources */,
 				B2E51D9229DFCA52005B3107 /* SingleLinkedList.swift in Sources */,
+				B2E51DA629E2ABA1005B3107 /* DoubleNode.swift in Sources */,
 				B2E51D8E29DECFF1005B3107 /* ArrayQueue.swift in Sources */,
+				B2E51DA029E267B7005B3107 /* StackViewController.swift in Sources */,
+				B2E51DA229E2AB0A005B3107 /* SingleCycleLinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

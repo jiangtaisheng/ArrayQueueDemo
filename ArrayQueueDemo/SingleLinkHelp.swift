@@ -126,5 +126,57 @@ class SingleLinkHelp: NSObject {
             
         }
     }
-    
+    // 环形链表实现约瑟夫问题 小孩出圈
+    /**
+     startIndex 开始孩子的位置
+     spaceCount  间隔几个 孩子 出列
+     num  孩子的总数
+     */
+    static func getBoyIndex(startIndex: Int, spaceCount: Int, num: Int){
+        
+        if startIndex < 0 || spaceCount < 1 || num < 1 {
+            print("输入参数有误")
+            return
+        }
+        var nodeList = [Node]()
+        for i in 1..<num+1 {
+            let item = ["id": i ,"name": "name-\(i)" ,"country": "country-\(i)"] as [String : Any]
+            let node = Node(item: item)
+            nodeList.append(node)
+        }
+        
+        let singleCycleLink = SingleCycleLinkedList.init(nodeList: nodeList)
+        singleCycleLink.showNodeList()
+        
+        var fisrtNode = singleCycleLink.getFirstNode()
+        var helperNode = fisrtNode
+        //获取 helperNode 指向的节点
+        while(true) {
+            if helperNode.next == fisrtNode {
+                break
+            }
+            helperNode = helperNode.next!
+        }
+        
+        // 根据startIndex 更新 fisrtNode 和 helperNode 最开始的指向
+        for i  in 0..<startIndex-1 {
+            fisrtNode = fisrtNode.next!
+            helperNode = helperNode.next!
+        }
+        
+        while(true) {
+            if fisrtNode == helperNode {
+                break
+            }
+            for _  in 0..<spaceCount-1 {
+                fisrtNode = fisrtNode.next!
+                helperNode = helperNode.next!
+            }
+            print("出圈:\(fisrtNode)")
+            fisrtNode = fisrtNode.next!
+            helperNode.next = fisrtNode
+        }
+        print("最后的幸运者:\(fisrtNode)")
+        
+    }
 }
